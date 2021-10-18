@@ -88,6 +88,5 @@ namespace ParalelForms
             }
             threads.ForEach(p => p.Abort());
         }
-
     }
 }

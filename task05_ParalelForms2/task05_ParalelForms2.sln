@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task05_ParalelForms2", "task05_ParalelForms2\task05_ParalelForms2.csproj", "{173F61D0-5206-4FB2-8D91-505D2BDA621E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{173F61D0-5206-4FB2-8D91-505D2BDA621E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173F61D0-5206-4FB2-8D91-505D2BDA621E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173F61D0-5206-4FB2-8D91-505D2BDA621E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173F61D0-5206-4FB2-8D91-505D2BDA621E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46069C29-726A-4932-AAF2-BE2F9B3EBD32}
+	EndGlobalSection
+EndGlobal
