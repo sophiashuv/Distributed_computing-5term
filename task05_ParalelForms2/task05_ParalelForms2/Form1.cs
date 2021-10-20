@@ -8,6 +8,7 @@ namespace task05_ParalelForms2
  {
     public partial class Form1 : Form
     {
+        private int Num_petals => 16;
         private List<Thread> threads;
         private List<bool> status;
 
@@ -28,7 +29,7 @@ namespace task05_ParalelForms2
             Btm = new Bitmap(Width, Height);
             GImg = Graphics.FromImage(Btm);
 
-            alpha = 180 * 2 * (float)Math.PI / 180 / 32;
+            alpha =   (float)Math.PI  / Num_petals;
             y0 = panel1.Height / 2;
             x0 = CalculateValue(70, 1, 0, 2, 0).X;
         }
@@ -61,11 +62,11 @@ namespace task05_ParalelForms2
                 if (status[current])
                 {
                     
-                    if (alpha > 180 * 2 * (float)Math.PI / 180)
+                    if (alpha > 2 * (float)Math.PI)
                     {
 
                         g.Clear(panel1.BackColor);
-                        alpha = 180 * 2 * (float)Math.PI / 180 / 32;
+                        alpha =  (float)Math.PI / Num_petals;
                     }
                     
                     Pen pen = new Pen(Color.FromArgb(30, 132, 73));
@@ -74,20 +75,20 @@ namespace task05_ParalelForms2
 
                     pen.Color = color;
                     pen.Width = 4.0F;
-                    float end = alpha + 180 * 2 * (float)Math.PI / 180 / 16;
+                    float end = alpha +  2 * (float)Math.PI / Num_petals;
                     Console.WriteLine($"end {alpha}");
                     for (float teta = alpha; teta < end; teta += (float)Math.PI / 180)
                     {
-                        g.FillEllipse(new SolidBrush(Color.FromArgb(247, 220, 111)), Width / 2 - 6, Height / 2 - 6, 17, 17);
-                        var p = CalculateValue(120, 8, 0, 2, teta);
+                        g.FillEllipse(new SolidBrush(Color.FromArgb(247, 220, 111)), Width / 2 - 10, Height / 2 - 10, 20, 20);
+                        var p = CalculateValue(120, Num_petals/2, 0, 2, teta);
                         g.DrawLine(pen, x0, y0, p.X, p.Y);
                         x0 = p.X;
                         y0 = p.Y;
                         g.FillEllipse(new SolidBrush(Color.FromArgb(247, 220, 111)), Width / 2 - 10, Height / 2 - 10, 20, 20);
-                        Thread.Sleep(5);
+                        Thread.Sleep(20);
                     }
 
-                    Thread.Sleep(1000);
+                    //Thread.Sleep(200);
                     
                     alpha = end;
                     status[current] = false;
