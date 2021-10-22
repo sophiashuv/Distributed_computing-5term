@@ -24,7 +24,7 @@ namespace task05_ParalelForms2
         {
             InitializeComponent();
             threads = new List<Thread>();
-            status = new List<bool> { true, false, false, false, false, false };
+            status = new List<bool> { true, false, false, false, false , false };
 
             Btm = new Bitmap(Width, Height);
             GImg = Graphics.FromImage(Btm);
@@ -64,7 +64,6 @@ namespace task05_ParalelForms2
                     
                     if (alpha > 2 * (float)Math.PI)
                     {
-
                         g.Clear(panel1.BackColor);
                         alpha =  (float)Math.PI / Num_petals;
                     }
