@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace task07_FloydAlgorithm
 {
@@ -27,7 +23,6 @@ namespace task07_FloydAlgorithm
                     BeginMatrix[i, j] = Matrix[i, j];
                 }
             }
-
         }
 
         public void GenerateMatrix()
@@ -85,7 +80,6 @@ namespace task07_FloydAlgorithm
             if (numberOfThreads > Size)
                 numberOfThreads = Size;
 
-
             int count = Size / numberOfThreads;
             Thread[] threads = new Thread[numberOfThreads];
 
@@ -119,6 +113,5 @@ namespace task07_FloydAlgorithm
                 }
             }
         }
-
     }
 }

@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Threading;
 
 namespace task07_FloydAlgorithm
 {
     class Program
     {
         static int size;
-        static int INF = 100000;
 
         static void Main(string[] args)
         {
