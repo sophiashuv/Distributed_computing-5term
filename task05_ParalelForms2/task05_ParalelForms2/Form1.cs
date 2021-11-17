@@ -4,6 +4,8 @@ using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
 
+// Hello 
+
 namespace task05_ParalelForms2
  {
     public partial class Form1 : Form
