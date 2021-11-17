@@ -65,7 +65,7 @@ namespace task05_ParalelForms2
                     if (alpha > 2 * (float)Math.PI)
                     {
                         g.Clear(panel1.BackColor);
-                        alpha =  (float)Math.PI / Num_petals ;
+                        alpha =  (float)Math.PI / Num_petals;
                     }
                     
                     Pen pen = new Pen(Color.FromArgb(30, 132, 73));
