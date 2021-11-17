@@ -152,11 +152,11 @@ namespace OpenCL
             CLCalc.Program.Compile(programSource);
             multiplyMatrix = new CLCalc.Program.Kernel("MatrixMul");
 
-            int firstRows = 1000;
-            int firstColumns = 1000;
+            int firstRows = 2000;
+            int firstColumns = 2000;
 
-            int secondRows = 1000;
-            int secondColumns = 1000;
+            int secondRows = 2000;
+            int secondColumns = 2000;
 
             float[,] matrix1 = new float[firstRows, firstColumns];
             float[,] matrix2 = new float[secondRows, secondColumns];
